@@ -2,6 +2,7 @@ body{
  margin: 0px;
  padding: 0px;
  font-family: "Oswald", Arial, sans-serif;
+ overflow-x: hidden;
 }
 header .header-wrapper{
     background: #154734;
@@ -220,6 +221,11 @@ article .ads-section{
 .schedule{
   display: flex;
   justify-content: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 40px;
 }
 .schedule .left-side{
     width: 68%;
@@ -479,7 +485,15 @@ article .ads-section{
     font-family: "Oswald", Arial, sans-serif;
 }
 .video-section{
-    margin: 30px auto;
+    background: #f4f4f4;
+    padding: 50px 0px;
+}
+.video-inner{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid #e5e5e5;
 }
 iframe{
     width: 90%!important;
@@ -492,7 +506,6 @@ iframe{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1px 15px;
 }
 .video-section .video-header .heading-left{
   display: flex;
@@ -516,21 +529,23 @@ iframe{
     text-decoration: none;
     transition: .25s;
 }
-.video-section .video-header .heading-left .dew-img{
-
-}
 .video-wrapper{
     display: flex;
-    padding: 0 15px;
+    padding:15px;
+    background-color: #fff;
 }
 .video-right iframe{
     width: 30%!important;
 }
+.video-right{
+    border: 1px solid #e5e5e5;
+    margin-left: 20px;
+}
 .video-right>div{
     display: flex;
     padding: 10px 16px;
-    border: 1px solid gray;
-    margin: 11px 20px;
+    border-bottom: 1px solid #e5e5e5;
+   
 }
 .video-right p{
     padding: 5px 10px;
