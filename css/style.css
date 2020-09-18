@@ -68,7 +68,7 @@ header .header-wrapper .header-inner .nav > ul> li> a:hover{
     border-bottom: 3px solid #F9B51D;
 }
 header .header-wrapper .header-inner .nav > ul> li:hover .primary-wrapper{
-    display: block;
+    display: none;
 }
 header .header-wrapper .header-inner .right-logo{
      width: 10%;
