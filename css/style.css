@@ -482,7 +482,7 @@ article .ads-section{
     margin: 30px auto;
 }
 iframe{
-    width: 100%!important;
+    width: 90%!important;
 }
 .video-section .video-header{
   background: #154734;
@@ -518,6 +518,25 @@ iframe{
 }
 .video-section .video-header .heading-left .dew-img{
 
+}
+.video-wrapper{
+    display: flex;
+    padding: 0 15px;
+}
+.video-right iframe{
+    width: 30%!important;
+}
+.video-right>div{
+    display: flex;
+    padding: 10px 16px;
+    border: 1px solid gray;
+    margin: 11px 20px;
+}
+.video-right p{
+    padding: 5px 10px;
+    width: 220px;
+    margin: 0;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 800px){
