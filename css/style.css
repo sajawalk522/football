@@ -3,72 +3,92 @@ body{
  padding: 0px;
  font-family: "Oswald", Arial, sans-serif;
 }
-header{
-
-}
 header .header-wrapper{
-	background: #154734;
-    padding: 0 48px;
+    background: #154734;
     height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
 }
 header .header-wrapper .header-inner{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
-    position: relative;
+    display: flex;
+    padding: 0 48px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 header .header-wrapper .header-inner .header-logo{
-	flex: 1;
-	width: 10%
+    flex: 1;
+    width: 10%
 }
 header .header-wrapper .header-inner .header-logo img{
-	width: 46px;
+    width: 46px;
     height: 52px;
 }
 header .header-wrapper .header-inner .nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%
 }
 header .header-wrapper .header-inner .nav ul{
-	list-style: none;
-	display: flex;
-	margin: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 
 }
-header .header-wrapper .header-inner .nav ul li{
-	font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-    margin: 0 15px;
+
+header .header-wrapper .header-inner .nav{
+    height: 100%;
 }
-header .header-wrapper .header-inner .nav ul li a{
-	color: white;
+header .header-wrapper .header-inner .nav> ul{
+    height: 100%;
+    padding-top: 6px;
+}
+header .header-wrapper .header-inner .nav> ul >li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 0px 20px;
+}
+header .header-wrapper .header-inner .nav > ul> li> a{
+    color: white;
     overflow: hidden;
     position: relative;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom:4px;
+}
+header .header-wrapper .header-inner .nav > ul> li> a:hover{
+    color: #F9B51D;
+    border-bottom: 3px solid #F9B51D;
+}
+header .header-wrapper .header-inner .nav > ul> li:hover .primary-wrapper{
+    display: block;
 }
 header .header-wrapper .header-inner .right-logo{
-	 width: 10%;
-	 display: flex;
-	 justify-content: flex-end;
+     width: 10%;
+     display: flex;
+     justify-content: flex-end;
 }
 header .header-wrapper .header-inner .right-logo img{
-	width: 60px;
+    width: 60px;
     height: 38px;
 }
 .header-two{
     display: flex;
     align-items: center;
     height: 60px;
+    margin-top: 70px;
     font-family: "Oswald", Arial, sans-serif;
 }
 .header-two .white-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 0px 50px;
 }
@@ -78,61 +98,61 @@ header .header-wrapper .header-inner .right-logo img{
     font-family: "Oswald", Arial, sans-serif;
 }
 .header-two .white-header ul{
-	display: flex;
-	justify-content: flex-end;
-	list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
 }
 .header-two .white-header ul li{
-	font-size: 16px;
+    font-size: 16px;
     color: #154734;
     display: flex;
 }
 .header-two .white-header ul li span{
-	margin: 0 5px;
+    margin: 0 5px;
 }
 .header-two .white-header ul li a{
-	text-decoration: none;
+    text-decoration: none;
     display: block;
     color: inherit;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
 }
 .header-two .white-header ul li a:hover{
-	text-decoration: underline;
-	line-height: 1.3;
+    text-decoration: underline;
+    line-height: 1.3;
 }
 header .Hero-banner{
-	background-image: url("../image/Header.jpg");
-	width: 100%;
-	height: 600px;
-	background-size: cover;
-	background-position: center;
+    background-image: url("../image/Header.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
 article .card-image{
  display: flex;
 }
 article .card-image .card-img{
-	background-image: url("../image/Header.jpg");
-	width: 25%;
-	height: 200px;
-	background-size: cover;
-	background-position: center;
-	position: relative;
+    background-image: url("../image/Header.jpg");
+    width: 25%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 article .card-image .card-img1{
-	background-image: url("../image/download.jpg");
+    background-image: url("../image/download.jpg");
 }
 article .card-image .card-img2{
-	background-image: url("../image/download (1).jpg");
+    background-image: url("../image/download (1).jpg");
 }
 article .card-image .card-img3{
-	background-image: url("../image/download (2).jpg");
+    background-image: url("../image/download (2).jpg");
 }
 article .card-image .card-img4{
-	background-image: url("../image/download (3).jpg");
+    background-image: url("../image/download (3).jpg");
 }
 article .card-image .green-hover{
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,35 +166,35 @@ article .card-image .green-hover{
     display: none;
 }
 article .card-image .card-img1:hover .green-hover{
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 article .card-image .card-img2:hover .green-hover{
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 article .card-image .card-img3:hover .green-hover{
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 article .card-image .card-img4:hover .green-hover{
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 article .card-image .green-hover:before{
-	content: '';
+    content: '';
     height: 4px;
     width: 100%;
     position: absolute;
@@ -193,16 +213,16 @@ article .card-image .green-hover h2{
 
 }
 article .ads-section{
-	width: 100%;
-	height: 150px;
-	background-color: #f9f9f9;
+    width: 100%;
+    height: 50px;
+    background-color: #f9f9f9;
 }
 .schedule{
   display: flex;
   justify-content: center;
 }
 .schedule .left-side{
-	width: 68%;
+    width: 68%;
 }
 .schedule .schedule-header{
   display: flex;
@@ -244,7 +264,7 @@ article .ads-section{
     line-height: 60px;
 }
 .schedule .right-side{
-	width: 28%;
+    width: 28%;
     border: 1px solid #e5e5e5;
 }
 .schedule .left-side .image-box{
@@ -286,7 +306,6 @@ article .ads-section{
 }
 .schedule .left-side .image-box .box-list ul li{
   text-align: center;
-  padding: 2px 0px;
 }
 .schedule .left-side .image-box .box-list ul li span{
  
@@ -424,33 +443,74 @@ article .ads-section{
 .footer .foot-right .footer-logo img{
     width: 100%;
 }
-.dropdown{
+.primary-wrapper .dropdown{
    display:flex;
    background-color:#fff;
    justify-content:center;
    position: absolute;
-   top: 57px;
+   top: 70px;
     width: 100%;
+    height: 100vh;
     left: 0;
     right: 0;
+}
+.primary-wrapper{
     display: none;
 }
-.dropdown>div{
+.primary-wrapper .dropdown>div{
    width:40%;
    padding:20px
 }
-.dropdown ul{
+.primary-wrapper .dropdown ul{
    list-style-type: none;
    padding:0;
    display: block!important;
 }
-.dropdown ul li{
-   padding:10px 0;
-   border-bottom:1px solid black;
+.primary-wrapper .dropdown ul li{
+   padding:15px 0;
+   border-bottom:1px solid #E5E5E5;
 }
-.dropdown ul li a{
+.primary-wrapper .dropdown ul li a{
    text-decoration:none;
+   text-transform: uppercase;
    color: #154734!important;
     font-size: 16px;
     font-family: "Oswald", Arial, sans-serif;
+}
+
+@media screen and (max-width: 800px){
+article .card-image{
+    flex-direction: column;
+}
+article .card-image .card-img{
+    width: 100%;
+}
+.schedule{
+    flex-direction: column;
+}
+.schedule .left-side{
+    width: 100%;
+    margin: 0px;
+}
+.schedule .right-side{
+    width: 100%;
+     margin: 0px;
+}
+.schedule .left-side .slider-cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.schedule .schedule-footer{
+    height: auto;
+}
+.logos-container{
+    flex-direction: column;
+}
+.logos-container .img-container{
+    width: 50%;
+}
+.footer{
+    flex-direction: column;
+}
 }
