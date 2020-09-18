@@ -242,6 +242,7 @@ article .ads-section{
 .slick-dots{
     padding: 10px 0px!important;
     border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     margin-top: 50px!important;
 }
 .slick-slider .slick-list{
@@ -476,6 +477,47 @@ article .ads-section{
    color: #154734!important;
     font-size: 16px;
     font-family: "Oswald", Arial, sans-serif;
+}
+.video-section{
+    margin: 30px auto;
+}
+iframe{
+    width: 100%!important;
+}
+.video-section .video-header{
+  background: #154734;
+    color: white;
+    text-transform: uppercase;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 15px;
+}
+.video-section .video-header .heading-left{
+  display: flex;
+    align-items: center;
+}
+.video-section .video-header .heading-left h3{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Oswald", Arial, sans-serif;
+    padding-left: 28px;
+    margin-right: 20px;
+}
+.video-section .video-header .heading-right{
+  padding: 0 24px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.video-section .video-header .heading-right h3{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s;
+}
+.video-section .video-header .heading-left .dew-img{
+
 }
 
 @media screen and (max-width: 800px){
