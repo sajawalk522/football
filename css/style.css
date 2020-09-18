@@ -553,6 +553,27 @@ iframe{
     margin: 0;
     line-height: 1.5;
 }
+.video-right .thumbnail-img{
+    width: 130px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-right .thumbnail1{
+     background-image: url("../image/men.jpg");
+}
+.video-right .thumbnail2{
+     background-image: url("../image/baylor3.jpg");
+}
+.video-right .thumbnail3{
+     background-image: url("../image/baylor2.jpg");
+}
+.video-right .thumbnail4{
+     background-image: url("../image/baylor1.jpg");
+}
 
 @media screen and (max-width: 800px){
 article .card-image{
